@@ -1,6 +1,6 @@
 const CONFIG = {
   // Add your short-lived Spotify user access token here.
-  accessToken: "",
+  accessToken: "bbb8eb22a59f4d9bb00817482689c6ab",
   recentlyPlayedLimit: 6,
 };
 
