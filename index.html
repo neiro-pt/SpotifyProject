@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Pulse</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <p class="eyebrow">Spotify API Dashboard</p>
+        <h1>Now Playing</h1>
+        <p class="subtitle">A minimal live snapshot of your listening activity.</p>
+      </header>
+
+      <section class="card" aria-labelledby="current-track-heading">
+        <div class="card__title-row">
+          <h2 id="current-track-heading">Currently Playing</h2>
+          <button id="refresh-btn" type="button">Refresh</button>
+        </div>
+        <article id="current-track" class="track track--current" aria-live="polite">
+          <p class="muted">Waiting for data…</p>
+        </article>
+      </section>
+
+      <section class="card" aria-labelledby="recent-tracks-heading">
+        <h2 id="recent-tracks-heading">Recently Played</h2>
+        <ul id="recent-tracks" class="track-list" aria-live="polite">
+          <li class="muted">Waiting for data…</li>
+        </ul>
+      </section>
+
+      <footer class="app__footer">
+        <p id="status" class="muted">Configure your Spotify access token in <code>app.js</code>.</p>
+      </footer>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
